@@ -1,0 +1,20 @@
+.edit-table tr td {
+  padding: 0; }
+  .edit-table tr td:focus-within {
+    outline: 1px solid #D3D2D4; }
+
+.edit-table tr th:first-child,
+.edit-table tr td:first-child {
+  min-width: 240px !important;
+  padding: 0.25rem; }
+
+.edit-table input[type="text"] {
+  width: 3rem;
+  margin: 0 auto;
+  display: block;
+  padding: 0 0 0 0;
+  border: none;
+  background-color: inherit !important;
+  outline: none;
+  box-shadow: none !important;
+  height: 1rem; }
