@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/cabinet.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer type="text/javascript" src="js/what-input.js"></script>
+
 </head>
 <body>
     <main class="page">
@@ -17,11 +18,27 @@
                             <img src="imgs/logotip_SSU_2_h42.png" width="35" height="42" alt="Логотип">
                         </a>
                         <h1>Особистий кабінет</h1>
+                        <ul class="dropdown menu float-right type-of-page" data-dropdown-menu data-close-on-click-inside>
+                            <li class="is-dropdown-submenu-parent">
+                                <a href="#" class="type-of-page__menu">Лекції</a>
+                                <ul class="menu">
+                                    <li><a href="#" >Практики</a></li>
+                                    <li><a href="#">Лекції</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
+
             </div>
+
         </div>
+
+
+
+
+
         <div class="row expanded">
             <div id="top-notify" class="small-12 column text-center min-height-info notify">
                 <b class="alert"></b>
@@ -64,7 +81,7 @@
                         <tbody>
                             <tr>
                                 <td>Ваценко Андрій Володимирович</td>
-                                <td><input type="text" maxlength="2"></td>
+                                <td><div><input type="text" maxlength="2"></div></td>
                                 <td><input type="text" maxength="2"></td>
                                 <td><input type="text" maxength="2"></td>
                                 <td><input type="text" maxength="2"></td>
@@ -530,7 +547,12 @@
                     </table>
                 </div>
             </section>
+
+            <script defer type="text/javascript" src="js/jquery.js"></script>
+            <script defer type="text/javascript" src="js/foundation.min.js"></script>
+            <script defer type="text/javascript" src="js/custom/change_type_of_table.js"></script>
         </main>
+
 
         <!--<section class="main main__table">
             <table class="stack">
@@ -590,9 +612,8 @@
         </section>
 
     </div>
+-->
 
-<script defer type="text/javascript" src="js/jquery.js"></script>
-<script defer type="text/javascript" src="js/foundation.min.js"></script>
 
 </body>
 </html>
