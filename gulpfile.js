@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const $    = require('gulp-load-plugins')();
 const rename = require('gulp-rename');
-
+const concat = require('gulp-concat');
 
 var sassPaths = [
     'sass/'
@@ -14,10 +14,12 @@ gulp.task('sass', function() {
                 outputStyle: 'expanded'
             }))
         .pipe(gulp.dest('styles/'))
-        .pipe(rename('common.css'))
+        .pipe(concat('common.css'))
         .pipe(gulp.dest('styles/'));
 
-            /*.pipe(gulp.dest('styles/')))*/
+            /*.pipe(gulp.dest('styles/')))
+            *  .pipe(rename('common.css'))
+            * */
 });
 
         // .pipe(gulpfile.dest('D://OpenServer//domains//cabinet.ssu//public//css'))
