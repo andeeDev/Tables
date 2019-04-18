@@ -4,14 +4,21 @@
   "description": "my",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+    "compile:sass": "node-sass sass/teacherMark.scss styles/teacher.css -w",
+    "start": "gulp",
+    "build": "gulp sass"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "gulp": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^4.0.2"
   },
   "dependencies": {
+    "gulp-rename": "^1.4.0",
     "live-server": "^1.2.1"
   }
 }
