@@ -6,7 +6,7 @@
   "scripts": {
     "compile:sass": "node-sass sass/teacherMark.scss styles/teacher.css -w",
     "start": "gulp",
-    "build": "gulp sass"
+    "build": "gulp stream "
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "gulp-rename": "^1.4.0",
+    "gulp-watch": "^5.0.1",
     "live-server": "^1.2.1"
   }
 }

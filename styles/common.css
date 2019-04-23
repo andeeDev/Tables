@@ -11,6 +11,10 @@
   font-size: 16px;
 }
 
+td {
+  text-align: center;
+}
+
 .edit-table tr td {
   padding: 0;
   height: 1px;
