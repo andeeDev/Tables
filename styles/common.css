@@ -15,6 +15,10 @@ td {
   text-align: center;
 }
 
+th {
+  text-align: center;
+}
+
 .edit-table tr td {
   padding: 0;
   height: 1px;
